@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pZt-VX-lvr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Job-->
+        <scene sceneID="Zpj-Z3-rWS">
+            <objects>
+                <viewController id="5XV-DL-f1W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B35-ny-sqO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="k1e-Ae-10a"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Job" selectedImage="plus" catalog="system" id="A0X-no-Z9J">
+                        <color key="badgeColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDm-ja-A4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="162"/>
+        </scene>
+        <!--My Jobs-->
+        <scene sceneID="X46-xF-2ZL">
+            <objects>
+                <viewController id="O1i-te-4E9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PHs-9X-m7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TYg-nb-3PN">
+                                <rect key="frame" x="0.0" y="108" width="414" height="649"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="649" id="orB-iT-Zs3"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="163" id="fxk-Fk-Qua">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="163"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fxk-Fk-Qua" id="gdm-en-WCT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okh-1X-aea">
+                                                    <rect key="frame" x="11.5" y="11.5" width="140" height="140"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 01, 2020" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-kK-4Mo">
+                                                            <rect key="frame" x="15" y="15" width="110" height="110"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="140" id="5pu-JL-amd"/>
+                                                        <constraint firstItem="BGj-kK-4Mo" firstAttribute="leading" secondItem="Okh-1X-aea" secondAttribute="leading" constant="15" id="B4K-18-cbD"/>
+                                                        <constraint firstItem="BGj-kK-4Mo" firstAttribute="top" secondItem="Okh-1X-aea" secondAttribute="top" constant="15" id="Iua-ri-ZDj"/>
+                                                        <constraint firstItem="BGj-kK-4Mo" firstAttribute="leading" secondItem="Okh-1X-aea" secondAttribute="leading" constant="15" id="PJg-Qw-K7t"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BGj-kK-4Mo" secondAttribute="trailing" constant="15" id="QJJ-bI-ALI"/>
+                                                        <constraint firstItem="BGj-kK-4Mo" firstAttribute="top" secondItem="Okh-1X-aea" secondAttribute="top" constant="15" id="TSZ-rB-J13"/>
+                                                        <constraint firstAttribute="width" constant="140" id="avB-1r-BAf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="BGj-kK-4Mo" secondAttribute="bottom" constant="15" id="cJu-2X-cxm"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8hd-6X-FVB">
+                                                    <rect key="frame" x="163" y="22" width="159.5" height="119"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfk-BI-BeQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="159.5" height="33"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pac-7Q-yc9">
+                                                            <rect key="frame" x="0.0" y="43" width="88" height="33"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWE-dG-Tdd">
+                                                            <rect key="frame" x="0.0" y="86" width="108" height="33"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8hd-6X-FVB" firstAttribute="leading" secondItem="Okh-1X-aea" secondAttribute="trailing" constant="11.5" id="6CO-78-R5X"/>
+                                                <constraint firstItem="Okh-1X-aea" firstAttribute="top" secondItem="gdm-en-WCT" secondAttribute="top" constant="11.5" id="GgY-5x-XhC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8hd-6X-FVB" secondAttribute="bottom" constant="11" id="MgY-a9-0C4"/>
+                                                <constraint firstAttribute="bottom" secondItem="Okh-1X-aea" secondAttribute="bottom" constant="11.5" id="Prh-7f-g79"/>
+                                                <constraint firstItem="Okh-1X-aea" firstAttribute="leading" secondItem="gdm-en-WCT" secondAttribute="leading" constant="11.5" id="S4i-CL-9Y4"/>
+                                                <constraint firstItem="8hd-6X-FVB" firstAttribute="top" secondItem="gdm-en-WCT" secondAttribute="topMargin" constant="11" id="kiF-Ol-L5d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jobs I Have Applied For" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1h-Fc-GWW">
+                                <rect key="frame" x="36" y="44" width="342.5" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="aus-az-19w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Lg8-gy-3Wr">
+                                <rect key="frame" x="0.0" y="757" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TYg-nb-3PN" firstAttribute="leading" secondItem="yHg-hC-c1l" secondAttribute="leading" id="6DX-ey-ch1"/>
+                            <constraint firstItem="TYg-nb-3PN" firstAttribute="leading" secondItem="Lg8-gy-3Wr" secondAttribute="leading" id="BxH-RV-pwk"/>
+                            <constraint firstItem="TYg-nb-3PN" firstAttribute="top" secondItem="v1h-Fc-GWW" secondAttribute="bottom" constant="2" id="PCW-SD-aq8"/>
+                            <constraint firstItem="v1h-Fc-GWW" firstAttribute="centerX" secondItem="PHs-9X-m7Y" secondAttribute="centerX" id="SrY-TH-vxV"/>
+                            <constraint firstItem="TYg-nb-3PN" firstAttribute="trailing" secondItem="Lg8-gy-3Wr" secondAttribute="trailing" id="Sro-Sl-wuH"/>
+                            <constraint firstItem="TYg-nb-3PN" firstAttribute="centerX" secondItem="v1h-Fc-GWW" secondAttribute="centerX" id="jfa-2K-vZD"/>
+                            <constraint firstItem="Lg8-gy-3Wr" firstAttribute="top" secondItem="TYg-nb-3PN" secondAttribute="bottom" id="u4k-uO-ceY"/>
+                            <constraint firstItem="v1h-Fc-GWW" firstAttribute="top" secondItem="yHg-hC-c1l" secondAttribute="top" id="yru-WR-cN6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yHg-hC-c1l"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Jobs" id="7ma-35-JMS">
+                        <color key="badgeColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMh-sW-rwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="-486.16071428571428"/>
+        </scene>
+        <!--HomeTBC-->
+        <scene sceneID="oSG-JL-aZs">
+            <objects>
+                <tabBarController id="pZt-VX-lvr" customClass="HomeTBC" customModule="ApplicationTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IAZ-Se-nCu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="O1i-te-4E9" kind="relationship" relationship="viewControllers" id="Hut-Ho-ST1"/>
+                        <segue destination="5XV-DL-f1W" kind="relationship" relationship="viewControllers" id="jpN-b9-XXd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7F-Bo-lCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="-162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

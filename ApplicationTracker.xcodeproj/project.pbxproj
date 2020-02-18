@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		DA3A0FF423FB84A90029398C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A0FF323FB84A90029398C /* AppDelegate.swift */; };
 		DA3A0FF623FB84A90029398C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A0FF523FB84A90029398C /* SceneDelegate.swift */; };
-		DA3A0FF823FB84A90029398C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A0FF723FB84A90029398C /* ViewController.swift */; };
 		DA3A0FFB23FB84A90029398C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3A0FF923FB84A90029398C /* Main.storyboard */; };
 		DA3A0FFD23FB84AF0029398C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3A0FFC23FB84AF0029398C /* Assets.xcassets */; };
 		DA3A100023FB84AF0029398C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3A0FFE23FB84AF0029398C /* LaunchScreen.storyboard */; };
+		DA3A100D23FB858A0029398C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A100C23FB858A0029398C /* GradientView.swift */; };
+		DA3A100F23FB860B0029398C /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A100E23FB860B0029398C /* RoundedCornerView.swift */; };
+		DA3A101123FB88690029398C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3A101023FB88690029398C /* Default-568h@2x.png */; };
+		DA3A101323FB89790029398C /* HomeTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A101223FB89790029398C /* HomeTBC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA3A0FF023FB84A80029398C /* ApplicationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3A0FF323FB84A90029398C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3A0FF523FB84A90029398C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA3A0FF723FB84A90029398C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA3A0FFA23FB84A90029398C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA3A0FFC23FB84AF0029398C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3A0FFF23FB84AF0029398C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA3A100123FB84AF0029398C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA3A100C23FB858A0029398C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		DA3A100E23FB860B0029398C /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		DA3A101023FB88690029398C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA3A101223FB89790029398C /* HomeTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTBC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		DA3A0FE723FB84A80029398C = {
 			isa = PBXGroup;
 			children = (
+				DA3A101023FB88690029398C /* Default-568h@2x.png */,
 				DA3A0FF223FB84A90029398C /* ApplicationTracker */,
 				DA3A0FF123FB84A80029398C /* Products */,
 			);
@@ -56,15 +63,57 @@
 		DA3A0FF223FB84A90029398C /* ApplicationTracker */ = {
 			isa = PBXGroup;
 			children = (
-				DA3A0FF323FB84A90029398C /* AppDelegate.swift */,
-				DA3A0FF523FB84A90029398C /* SceneDelegate.swift */,
-				DA3A0FF723FB84A90029398C /* ViewController.swift */,
-				DA3A0FF923FB84A90029398C /* Main.storyboard */,
+				DA3A100A23FB851B0029398C /* Model */,
+				DA3A100923FB85190029398C /* View */,
+				DA3A100823FB85120029398C /* Controller */,
+				DA3A100723FB850E0029398C /* Supporting Files */,
 				DA3A0FFC23FB84AF0029398C /* Assets.xcassets */,
-				DA3A0FFE23FB84AF0029398C /* LaunchScreen.storyboard */,
-				DA3A100123FB84AF0029398C /* Info.plist */,
 			);
 			path = ApplicationTracker;
+			sourceTree = "<group>";
+		};
+		DA3A100723FB850E0029398C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A100123FB84AF0029398C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA3A100823FB85120029398C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A0FF523FB84A90029398C /* SceneDelegate.swift */,
+				DA3A0FF323FB84A90029398C /* AppDelegate.swift */,
+				DA3A101223FB89790029398C /* HomeTBC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA3A100923FB85190029398C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A0FFE23FB84AF0029398C /* LaunchScreen.storyboard */,
+				DA3A0FF923FB84A90029398C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA3A100A23FB851B0029398C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A100B23FB85560029398C /* Extras for App */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA3A100B23FB85560029398C /* Extras for App */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A100C23FB858A0029398C /* GradientView.swift */,
+				DA3A100E23FB860B0029398C /* RoundedCornerView.swift */,
+			);
+			path = "Extras for App";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3A100023FB84AF0029398C /* LaunchScreen.storyboard in Resources */,
+				DA3A101123FB88690029398C /* Default-568h@2x.png in Resources */,
 				DA3A0FFD23FB84AF0029398C /* Assets.xcassets in Resources */,
 				DA3A0FFB23FB84A90029398C /* Main.storyboard in Resources */,
 			);
@@ -138,9 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA3A0FF823FB84A90029398C /* ViewController.swift in Sources */,
+				DA3A100F23FB860B0029398C /* RoundedCornerView.swift in Sources */,
 				DA3A0FF423FB84A90029398C /* AppDelegate.swift in Sources */,
+				DA3A100D23FB858A0029398C /* GradientView.swift in Sources */,
 				DA3A0FF623FB84A90029398C /* SceneDelegate.swift in Sources */,
+				DA3A101323FB89790029398C /* HomeTBC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7SHSK6MNC;
-				INFOPLIST_FILE = ApplicationTracker/Info.plist;
+				INFOPLIST_FILE = "ApplicationTracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinneykare.ApplicationTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7SHSK6MNC;
-				INFOPLIST_FILE = ApplicationTracker/Info.plist;
+				INFOPLIST_FILE = "ApplicationTracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinneykare.ApplicationTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
